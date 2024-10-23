@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Template</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+         body {
+
+            width: 60%;    
+            height: 60px;
+            padding: 20px;
+            line-height: 1.6;
+            margin: 0 auto;
+        }
+
+        .cv-container {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            height: 100%;
+        }
+
+        .left-column .section {
+            flex: 1;
+        }
+
+        .middle-column .section:first-child {
+            flex: 0.4;
+        }
+
+        .middle-column .section:last-child {
+            flex: 0.6;
+        }
+
+        .right-column .section {
+            flex: 1;
+        }
+
+        .section {
+            border: 1px solid #a8a8a8;
+            padding: 15px;
+        }
+
+        /* Primera columna - Información personal */
+        .profile-image {
+            width: 300px;
+            height: 300px;
+            border: 1px solid #000;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+        }
+
+        .personal-info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* Segunda columna - Estudios y Cursos */
+        .contact-form {
+            border: 1px dashed #300b0b;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        /* Títulos y campos */
+        .section-title {
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #000;
+            padding-bottom: 5px;
+        }
+
+        .field {
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+
+        /* Media query para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .cv-container {
+                grid-template-columns: 1fr;
+                height: auto;
+            }
+            
+            .column {
+                gap: 15px;
+            }
+            
+            .section {
+                flex: none;
+            }
+        }
+    </style>
+</head>
+<body >
+    <div class="cv-container">
+        <!-- Primera columna -->
+        <div class="column left-column">
+            <div class="section">
+                <div class="profile-image"></div>
+                <div class="personal-info">
+                    <br>
+                    <br>
+                    <div class="field"><b>Nombre:</b> Fabian Andres</div>
+                    <div class="field"><b>Apellidos: </b>Ortega Barragan</div>
+                    <div class="field"><b>Email: </b>fabo1936@hotmail.com</div>
+                    <div class="field"><b>Email alternativo: </b>fabo1936@gmail.com</div>
+                    <div class="field"><b>Nro Contacto: </b>3173203118</div>
+                    <div class="field"><b>Edad: </b>24</div>
+                    <div class="field"><b>Direccion: </b>xxxxxxxxxxxxxxxx</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Segunda columna -->
+        <div class="column middle-column">
+            <div class="section">
+             <div class="field"> 
+                <h2>ESTUDIOS</h2>
+                <br>
+                <h4>Bachiller Tecnico industrial:</h4>
+                    <li>Instituto Salesiano Eloy Valenzuela</li>
+                    <li>2017</li>
+                <h4>Especialidad: </h4>
+                    <li>Electricidad, Electronica y energias renovables</li>
+
+            </div>
+
+
+        </div>
+
+            <div class="section">
+                <h4>CURSOS</h4>
+                <br>
+                <h4>Nombre del curso</h4>
+                <li>porgrmamacion de software</li>
+                <h4>Institucion</h4>
+                <li>Campus land</li>
+                <h4>Año</h4>
+                <li>2024 (en proceso)</li>
+            </div>
+        </div>
+
+        <!-- Tercera columna -->
+        <div class="column right-column">
+            <div class="section">
+               <h4>MIS PROYECTOS</h4>
+               <br>
+                <h4>Nombre del proyecto</h4>
+                    <li>liga betplay </li>
+                <h4>Año</h4>
+                    <li>2024</li>
+                <h4>Descripcion</h4>
+                <li>descrpcion hacerca del o los proyectos</li>
+                <h4>Logros alcanzados</h4>
+            </div>
+
+            <div class="section">
+                <h4>EXP. LABORAL</h4>
+                <div class="field">Empresa o Persona</div>
+                <div class="field">Año/Duración proyecto</div>
+                <div class="field">Logros</div>
+                <div class="field">Stack Tec.</div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">SKILLS</div>
+                <div class="field">python</div>
+            </div>
+            <div class="section">
+            <h4>Nombre</h4>
+            <h4>Email</h4>
+            <h4>telefono</h4>
+            <h4>Descripcion</h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
