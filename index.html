@@ -3,79 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fuentes.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>CV con Tablas</title>
-    <style>
-        * {
-            margin:  0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
 
-        body {
-            width: 80%;
-            padding: 10px;
-            margin: 0 auto;
-            background-color: rgb(211, 184, 161);
-        }
-
-        .cv-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 20px;
-            padding: 20px;
-        }
-
-        .table-container {
-            width: 100%;
-            border: 1px solid black;
-            padding: 15px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-
-        th, td {
-            padding: 10px;
-            border: 1px solid #000;
-            text-align: left;
-        }
-
-        .profile-image {
-            width: 300px;
-            height: 300px;
-            border: 1px solid #000;
-            border-radius: 50%;
-            margin: 0 auto 20px;
-            overflow: hidden;
-        }
-
-        .profile-image img {
-            width: 100%;
-            height: 120%;
-            object-fit: cover; /* Ajusta la imagen dentro del círculo */
-        }
-
-        /* Encabezados y títulos */
-        .section-title {
-            text-transform: uppercase;
-            font-weight: bold;
-            margin-bottom: 15px;
-            border-bottom: 1px solid #000;
-            padding-bottom: 5px;
-            text-align: center;
-        }
-
-        /* Media query para pantallas pequeñas */
-        @media (max-width: 768px) {
-            .cv-container {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
 </head>
 <body>
     <div class="cv-container">
@@ -86,7 +17,7 @@
                         <th colspan="2" class="section-title">Información Personal</th>
                     </tr>
                 </thead>
-                <tbody>
+            
                     <tr>
                         <td colspan="2">
                             <div class="profile-image">
@@ -119,7 +50,10 @@
                         <td><b>Dirección</b></td>
                         <td>Calle 60 D 16F-06 manzana E ciudadela comfenalco</td>
                     </tr>
-                </tbody>
+                    <tr>
+                    
+
+                    </tr>
             </table>
         </div>
 
@@ -187,7 +121,7 @@
                     </tr>
                     <tr>
                         <td><b>Descripción:</b></td>
-                        <td>uso de persistencia entre otras cosas</td>
+                        <td>progama que permite al usuario, ver y registrar quipos ,cuerpo tecnico ,jugadores y registrar fechas  </td>
                     </tr>
                 </tbody>
             </table>
@@ -235,16 +169,26 @@
             <table>
                 <thead>
                     <tr>
-                        <th colspan="2" class="section-title">algo que no recuerdo</th>
+                        <th colspan="2" class="section-title">informacion de contacto</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>nombre,mail, telefono ,descrpcion</td>
+                        <td><b>Nombre</b></td>
+                        <td><input type="text"></td>
                     </tr>
-                </tbody>
+                    <td> <b>Email</b></td>
+                    <td>  <input type="email"></td>
+                    <tr>
+                    <tr>
+                        <td><b>numero de contacto</b></td>
+                        <td><input type="tel"></td>   
+                    </tr>
+                </tbody>    
             </table>
+            <input type="submit" value="Enviar">
         </div>
     </div>
 </body>
 </html>
+
