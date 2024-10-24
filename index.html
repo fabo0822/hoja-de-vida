@@ -1,11 +1,250 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>curriculum vitae</title>
+    <title>CV con Tablas</title>
+    <style>
+        * {
+            margin:  0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            width: 80%;
+            padding: 10px;
+            margin: 0 auto;
+            background-color: rgb(211, 184, 161);
+        }
+
+        .cv-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .table-container {
+            width: 100%;
+            border: 1px solid black;
+            padding: 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #000;
+            text-align: left;
+        }
+
+        .profile-image {
+            width: 300px;
+            height: 300px;
+            border: 1px solid #000;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            overflow: hidden;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 120%;
+            object-fit: cover; /* Ajusta la imagen dentro del círculo */
+        }
+
+        /* Encabezados y títulos */
+        .section-title {
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #000;
+            padding-bottom: 5px;
+            text-align: center;
+        }
+
+        /* Media query para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .cv-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="cv-container">
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2" class="section-title">Información Personal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <div class="profile-image">
+                                <img src="images/fabian.jpeg" alt="Foto de perfil">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Nombre</b></td>
+                        <td>Fabian Andres</td>
+                    </tr>
+                    <tr>
+                        <td><b>Apellido</b></td>
+                        <td>Ortega Barragan</td>
+                    </tr>
+                    <tr>
+                        <td><b>Email</b></td>
+                        <td>fabo1936@hotmail.com</td>
+                    </tr>
+
+                    <tr>
+                        <td><b>Nro Contacto</b></td>
+                        <td>3173203118</td>
+                    </tr>
+                    <tr>
+                        <td><b>Edad</b></td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td><b>Dirección</b></td>
+                        <td>Calle 60 D 16F-06 manzana E ciudadela comfenalco</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2" class="section-title">Estudios</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>Bachiller Tecnico Industrial</b></td>
+                        <td>Instituto Salesiano Eloy Valenzuela</td>
+                    </tr>
+                    <tr>
+                        <td><b>Año</b></td>
+                        <td>2017</td>
+                    </tr>
+                    <tr>
+                        <td><b>Especialidad</b></td>
+                        <td>Electricidad, Electrónica y Energías Renovables</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2" class="section-title">Cursos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>Nombre del curso</b></td>
+                        <td>Programación de software</td>
+                    </tr>
+                    <tr>
+                        <td><b>Institución</b></td>
+                        <td>Campus Land</td>
+                    </tr>
+                    <tr>
+                        <td><b>Año</b></td>
+                        <td>2024 (en proceso)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2" class="section-title">Mis Proyectos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>Nombre del proyecto</b></td>
+                        <td>Liga Betplay</td>
+                    </tr>
+                    <tr>
+                        <td><b>Año</b></td>
+                        <td>2024</td>
+                    </tr>
+                    <tr>
+                        <td><b>Descripción:</b></td>
+                        <td>uso de persistencia entre otras cosas</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2" class="section-title">Experiencia Laboral</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>Empresa o Persona</b></td>
+                        <td>inversiones lamumar SAS</td>
+                    </tr>
+                    <tr>
+                        <td><b>Año/Duración Proyecto</b></td>
+                        <td>1 febrero del 2022 hasta el 30 de enerio del 2024 </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2" class="section-title">Skills</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>Python</b></td>
+                        <td>basic</td>
+                    </tr>
+                    <tr>
+                        <td><b>Html</b></td>
+                        <td>beginner</td>
+                    </tr>
+                    <tr>
+                        <td><b>habilidades blandas</b></td>
+                        <td>basic</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2" class="section-title">algo que no recuerdo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>nombre,mail, telefono ,descrpcion</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </body>
 </html>
